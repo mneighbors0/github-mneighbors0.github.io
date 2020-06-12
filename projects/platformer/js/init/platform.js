@@ -2,9 +2,7 @@
     'use strict';
     window.opspark = window.opspark || {};
     window.opspark.platform = window.opspark.platform || {};
-    
     let platform = window.opspark.platform;
-    
     /**
      * init: This function initializes the platforms for the level.
      * 
@@ -25,10 +23,8 @@
      */ 
     function init(game) {
         let createPlatform = platform.create;
-
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        
         /*
          * ground : here, we create a floor. Given the width of of the platform 
          * asset, giving it a scaleX and scaleY of 2 will stretch it across the 

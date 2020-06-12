@@ -83,24 +83,10 @@
             return cannon;
        
         };
+
         /**
          * Returns a helper for placing cannons.
          */
         opspark.cannon.create = create;
     };
-    let cannon = window.opspark.cannon; 
-    function init(game) {
-        let createCannon = cannon.create;
-        ////////////////////////////////////////////////////////////////////////
-        // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        
-        createCannon("top", 450, 20);
-        createCannon("right", 225, 10);
-        createCannon("left", 450,);
-        
-        
-        // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////
-    }
-    cannon.init = init;
 })(window);

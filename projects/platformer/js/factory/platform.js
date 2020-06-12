@@ -16,30 +16,4 @@
         }
         opspark.platform.create = create;
     };
-    let platform = window.opspark.platform; 
-     function init(game) {
-        let createPlatform = platform.create;
-
-        ////////////////////////////////////////////////////////////////////////
-        // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        
-        /*
-         * ground : here, we create a floor. Given the width of of the platform 
-         * asset, giving it a scaleX and scaleY of 2 will stretch it across the 
-         * bottom of the game.
-         */
-        createPlatform(0, game.world.height - 32, 3, 2);    // DO NOT DELETE
-        
-        createPlatform(100, 570);
-        createPlatform(300, 495);
-        createPlatform(500, 400);
-        createPlatform(700, 325);
-        createPlatform(500, 225);
-        createPlatform(300, 125);
-        createPlatform(5, 25);
-        
-        // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////
-    }
-    platform.init = init;
 })(window);
