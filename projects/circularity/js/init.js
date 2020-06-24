@@ -38,6 +38,10 @@ var init = function (window) {
         drawCircle();
         drawCircle();
         drawCircle();
+        
+        for (var circle = 0; circle < 100; circle++) {
+    // do something
+        }
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -98,7 +102,7 @@ var init = function (window) {
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
         };
         //if (circle.y < 0) { circle.y = canvas.height} and same thing for x. if (circle.x <  0) {circle.x = canvas.width}
-//because 0 and canvas.height/canvas.width are different sides
+        //because 0 and canvas.height/canvas.width are different sides
 
         
         /////////////////////////////////////////////////////////////
