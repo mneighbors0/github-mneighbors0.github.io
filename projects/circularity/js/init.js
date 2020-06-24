@@ -82,21 +82,24 @@ var init = function (window) {
             
             // TODO 5 : YOUR CODE STARTS HERE /////////////////////
             //if the circle has gone past the left side of the screen, place it to the right
-            else if ( circle.x < canvas.width){
+            if ( circle.x < 0){
                 circle.x = canvas.width;
             }
             
             //if the circle has gone past the top of the screen, place it at the bottom
-            if ( circle.y < canvas.height){
+            if ( circle.y < 0){
                 circle.y = canvas.height;
             }
             
             //if the circle has gone past the bottom of the screen, place it at the top
-            else if ( circle.y > canvas.height){
+            if ( circle.y > canvas.height){
                 circle.y = 0;
             }
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
         };
+        //if (circle.y < 0) { circle.y = canvas.height} and same thing for x. if (circle.x <  0) {circle.x = canvas.width}
+//because 0 and canvas.height/canvas.width are different sides
+
         
         /////////////////////////////////////////////////////////////
         // --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
