@@ -25,7 +25,7 @@ var background = function (window) {
         // container which will be returned
         var background;
         var tree; 
-        var buildings = [];
+        var buildings = building[0], building[1], building[2], building[3], building[4];
         // ANIMATION VARIABLES HERE:
         
      

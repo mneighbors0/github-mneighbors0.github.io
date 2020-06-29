@@ -33,8 +33,8 @@ var init = function (window) {
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
-            draw.circle(100); 
+        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
+         draw.circle(); 
         }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -47,22 +47,15 @@ var init = function (window) {
         */
         // function update() {
         //     // TODO 4 : Update the circle's position //
-        //     physikz.updatePosition(circle[0]);
-        //     physikz.updatePosition(circle[1]);
-        //     physikz.updatePosition(circle[2]);
-        //     physikz.updatePosition(circle[3]);
-        //     physikz.updatePosition(circle[4]); 
             
         //     // TODO 5 : Call game.checkCirclePosition() on your circles.
-        //     game.checkCirclePosition(circle[0]);
-        //     game.checkCirclePosition(circle[1]);
-        //     game.checkCirclePosition(circle[2]);
-        //     game.checkCirclePosition(circle[3]);
-        //     game.checkCirclePosition(circle[4]);
             
         //     // TODO 8 : Iterate over the array
-           
-            
+                for (var i = 0; i < circles.length; i++) {
+                var eachCircle = circles()[i];
+                physikz.updatePosition(eachCircle);
+                game.checkCirclePosition(eachCircle);
+                }
         // }
     
         /* 
