@@ -30,8 +30,9 @@ var init = function (window) {
         physikz.addRandomVelocity(circle, canvas);
         view.addChild(circle);
         circles.push(circle);
-        }
-
+       }
+       
+       function circles(){}
         // TODO 3 / 7 : Call the drawCircle() function 
         for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
          draw.circle(); 
@@ -87,10 +88,7 @@ var init = function (window) {
             }
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
         };
-        //if (circle.y < 0) { circle.y = canvas.height} and same thing for x. if (circle.x <  0) {circle.x = canvas.width}
-        //because 0 and canvas.height/canvas.width are different sides
 
-        
         /////////////////////////////////////////////////////////////// --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
         /////////////////////////////////////////////////////////////
         
