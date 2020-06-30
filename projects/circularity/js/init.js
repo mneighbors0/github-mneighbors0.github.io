@@ -1,5 +1,5 @@
 var init = function (window) {
-    'use strict';
+    //'use strict';
     var 
         draw = window.opspark.draw,
         physikz = window.opspark.racket.physikz,
@@ -12,7 +12,7 @@ var init = function (window) {
     
     window.opspark.makeGame = function() {
         
-        window.opspark.game = {};
+        //window.opspark.game = {};
         var game = window.opspark.game;
         
         ////////////////////////////////////////////////////////////
@@ -25,7 +25,7 @@ var init = function (window) {
 
 
         // TODO 2 : Create a function that draws a circle 
-        function drawCircle (){
+       function drawCircle (){
         circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
         physikz.addRandomVelocity(circle, canvas);
         view.addChild(circle);
@@ -53,7 +53,7 @@ var init = function (window) {
         //     // TODO 8 : Iterate over the array
                 for (var i = 0; i < circles.length; i++) {
                 var eachCircle = circles()[i];
-                physikz.updatePosition(eachCircle);
+                //physikz.updatePosition(eachCircle);
                 game.checkCirclePosition(eachCircle);
                 }
          }
@@ -91,8 +91,7 @@ var init = function (window) {
         //because 0 and canvas.height/canvas.width are different sides
 
         
-        /////////////////////////////////////////////////////////////
-        // --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
+        /////////////////////////////////////////////////////////////// --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
         /////////////////////////////////////////////////////////////
         
         view.addChild(fps);
