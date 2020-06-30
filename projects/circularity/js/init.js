@@ -21,7 +21,7 @@ var init = function (window) {
         
         // TODO 1 : Declare and initialize our variables
         var circle;
-        var circles = [];
+        var circles = [1];
 
 
         // TODO 2 : Create a function that draws a circle 
@@ -45,7 +45,7 @@ var init = function (window) {
         In each frame, for every circle, it should redraw that circle
         and check to see if it has drifted off the screen.         
         */
-        // function update() {
+        function update() {
         //     // TODO 4 : Update the circle's position //
             
         //     // TODO 5 : Call game.checkCirclePosition() on your circles.
@@ -56,7 +56,7 @@ var init = function (window) {
                 physikz.updatePosition(eachCircle);
                 game.checkCirclePosition(eachCircle);
                 }
-        // }
+         }
     
         /* 
         This Function should check the position of a circle that is passed to the 
@@ -113,3 +113,4 @@ if((typeof process !== 'undefined') &&
     // here, export any references you need for tests //
     module.exports = init;
 }
+
